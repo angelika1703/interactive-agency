@@ -1,0 +1,29 @@
+.sect-four{
+  background-image: url("../img/four/bg.jpg");
+  background-size: cover;
+  margin-top: -20px;
+  color: white;
+  text-align: center;
+  .sect-four-capt{
+    @extend %boldText;
+    @extend %header;
+  }
+  .sect-four-descr{
+    color: $grey;
+    @extend %lightText;
+    padding-bottom: 100px;
+  }
+  .team-container{
+    .team-container-capt{
+      @extend %boldText;
+    }
+    .team-container-descr{
+      color: $grey;
+    }
+  }
+  .overlay-btn-container {
+    .overlay-btn {
+      @extend %button;
+    }
+  }
+}

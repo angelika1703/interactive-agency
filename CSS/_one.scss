@@ -1,0 +1,41 @@
+.sect-one{
+  .best-block{
+    padding-top: 9.06rem;
+    padding-bottom: 9.06rem;
+    color: white;
+    .best-capt{
+    font-size: 3rem;
+      .best{
+        @extend %lightText;
+      }
+      .best-item{
+        @extend %boldText;
+      }
+  }
+    .best-descr{
+      @extend %lightText;
+      font-size: 1.125rem;
+    }
+    .price-btn-container{
+      .btn-container{
+        @extend %button;
+      }
+    }
+  }
+  .bd-txt{
+    padding-right: 75px;
+  }
+  .bc-txt{
+    padding-left: 75px;
+  }
+  }
+  .bc{
+    background: url(../img/one/right-bg.jpg) center center no-repeat;
+    background-size: cover;
+
+  }
+  .bd {
+    background: url(../img/one/left-bg.jpg) center center no-repeat;
+    background-size: cover;
+
+  }

@@ -1,0 +1,53 @@
+.section-main {
+  background-image: url("../img/main/main-bg.jpg");
+  background-size: cover;
+  .header{
+    .menu-nav{
+      display: flex;
+      justify-content: flex-end;
+      .nav-item{
+        .nav-link{
+          color: #000!important;
+          @extend %regularText;
+          margin-right: 30px;
+          &:hover{
+            border: 1px solid #000;
+            border-radius: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  .price-btn-container{
+    padding-bottom: 410px;
+    .btn-container{
+      @extend %button;
+    }
+  }
+  .main-header{
+    @extend %boldText;
+    @extend %header;
+  }
+  .main-descr{
+    @extend %regularText;
+    color: $grey;
+  }
+  .scroll-container{
+    padding-bottom: 100px;
+    .scroll-down-text{
+      padding-top: 10px;
+      color: white;
+      @extend %lightText;
+      font-size: 0.8rem;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.header{
+  padding-bottom: 150px;
+}
+.main-descr{
+  padding-bottom: 60px;
+}

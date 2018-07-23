@@ -1,0 +1,27 @@
+.sect-two{
+  .sect-two-header{
+    @extend %header;
+    @extend %boldText;
+    color: black;
+  }
+    .services-capt{
+      @extend %boldText;
+      @extend %subheader;
+  }
+    .services-descr{
+      @extend %lightText;
+      @extend %smallText;
+      color: $grey;
+    }
+  .web-design, .digital-painting{
+    padding-right: 30px;
+  }
+  .web-app, .desctop-app{
+    padding-left: 30px;
+  }
+  .price-btn-container{
+    .btn-container{
+      @extend %button;
+    }
+  }
+}

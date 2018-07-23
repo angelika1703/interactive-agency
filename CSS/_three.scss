@@ -1,0 +1,61 @@
+.sect-three {
+  position: relative;
+  padding: 0;
+  .center {
+    .slick-slide {
+      position: relative;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20%;
+        width: 100%;
+        height: 100%;
+        color: white;
+        opacity: 0;
+        transition: opacity .5s ease;
+        background-color: rgba(0, 0, 0, .5);
+        .overlay-header {
+          @extend %subheader;
+        }
+        .overlay-descr {
+          @extend %lightText;
+          @extend %smallText;
+        }
+        .overlay-btn-container {
+          .overlay-btn {
+            @extend %button;
+          }
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .overlay {
+          opacity: 1;
+
+        }
+      }
+    }
+  }
+  .paginator {
+    li {
+      position: absolute;
+      top: 45%;
+      display: block;
+      height: 58px;
+      width: 58px;
+      &:hover {
+        cursor: pointer;
+      }
+      &.prev {
+        left: 0;
+        background: url(../img/three/arrow-btn-left.png);
+      }
+      &.next {
+        right: 0;
+        background: url(../img/three/arrow-btn-right.png);
+      }
+    }
+  }
+
+}

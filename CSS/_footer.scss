@@ -1,0 +1,11 @@
+.footer{
+  .footer-descr{
+    @extend %lightText;
+    color: $grey;
+    .footer-descr-bold{
+      color: $grey;
+      @extend %boldText;
+
+    }
+  }
+}
