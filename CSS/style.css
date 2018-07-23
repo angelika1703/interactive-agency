@@ -156,6 +156,10 @@
   .sect-four .team-container .team-container-descr {
     color: #a7acbc; }
 
+.sect-five .google-map {
+  width: 100%;
+  height: 600px; }
+
 .footer .footer-descr {
   color: #a7acbc; }
   .footer .footer-descr .footer-descr-bold {
